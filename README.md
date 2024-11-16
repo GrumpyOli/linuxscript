@@ -25,3 +25,11 @@ curl -sSL https://raw.githubusercontent.com/GrumpyOli/linuxscript/refs/heads/mai
 ```Bash
 curl -sSL https://raw.githubusercontent.com/GrumpyOli/linuxscript/refs/heads/main/mariadb_remove.sh | sudo bash
 ```
+
+<h2>Pelican Panel & Wings helper</h2>
+
+<p>First, we ..</p>
+
+```Bash
+curl -sSL https://raw.githubusercontent.com/GrumpyOli/linuxscript/refs/heads/main/pelican/panel/setup_database.sh | sudo bash
+```
