@@ -1,9 +1,10 @@
 #!/bin/bash
 
-echo -e "Setting up database for Pelican Panel"
-echo -e "Default user name will be pelican"
-read -p "What will be you're password for the pelican user?" DBPWD
-read -p "What is your root password for MySQL|MariaDB?" ROOTPW
+echo -e "| =============================================|"
+echo -e "| Setting up database for Pelican Panel"
+echo -e "| Default user name will be pelican"
+read -p "| What will be you're password for the pelican user?" DBPWD
+read -p "| What is your root password for MySQL|MariaDB?" ROOTPW
 echo -e $DBPWD
 echo -e $ROOTPW
 
