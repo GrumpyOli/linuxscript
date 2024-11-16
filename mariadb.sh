@@ -12,19 +12,13 @@ if is_mariadb_installed; then
     exit 0
 fi
 
+sudo curl -LsS https://r.mariadb.com/downloads/mariadb_repo_setup | sudo bash -s
+
 # Update package list and upgrade packages quietly
 sudo apt update -qq -y
-sudo apt upgrade -qq -y
 
 # Install MariaDB server
 sudo apt install mariadb-server -y
 
-# Secure the installation
-sudo mysql_secure_installation
+echo -e "You need to run the command mysql_secure_installation to complete the MariaDB setup"
 
-# Enable and start MariaDB service
-sudo systemctl enable mariadb
-sudo systemctl start mariadb
-
-# Check MariaDB status
-sudo systemctl status mariadb
