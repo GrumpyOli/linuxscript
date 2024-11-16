@@ -6,3 +6,9 @@
 ```Bash
 sudo apt install curl
 ```
+
+<p>Installing MariaDB</p>
+
+```Bash
+curl -sSL https://raw.githubusercontent.com/username/repository/branch/script.sh | bash
+```
