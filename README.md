@@ -6,7 +6,13 @@
 ```Bash
 sudo apt install curl
 ```
+<p>Enabling SSH Server</p>
 
+```Bash
+sudo apt update -q
+sudo apt install -y -q openssh-server
+sudo ufw allow ssh
+```
 <h2>MariaDB</h2>
 <p>Install script</p>
 
