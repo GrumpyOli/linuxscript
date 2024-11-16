@@ -10,5 +10,5 @@ sudo apt install curl
 <p>Installing MariaDB</p>
 
 ```Bash
-curl -sSL https://raw.githubusercontent.com/username/repository/branch/script.sh | sudo bash
+curl -sSL https://raw.githubusercontent.com/GrumpyOli/linuxscript/refs/heads/main/mariadb.sh | sudo bash
 ```
