@@ -66,7 +66,7 @@ else
     sudo rm /etc/nginx/sites-enabled/default
 
     # Download the new configuration file
-    curl -L https://raw.githubusercontent.com/GrumpyOli/scripts/refs/heads/main/pelican/nginx/http/pelican.conf -o /etc/nginx/sites-available/pelican.conf
+    sudo curl -L https://raw.githubusercontent.com/GrumpyOli/scripts/refs/heads/main/pelican/nginx/http/pelican.conf -o /etc/nginx/sites-available/pelican.conf
 
     # Enable the new configuration by creating a symlink
     sudo ln -s /etc/nginx/sites-available/pelican.conf /etc/nginx/sites-enabled/
