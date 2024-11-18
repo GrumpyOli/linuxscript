@@ -28,8 +28,11 @@ curl -sSL https://raw.githubusercontent.com/GrumpyOli/linuxscript/refs/heads/mai
 
 <h2>Pelican Panel & Wings helper</h2>
 
-<p>First, we ..</p>
+<p>Panel</p>
 
 ```Bash
-curl -sSL https://raw.githubusercontent.com/GrumpyOli/linuxscript/refs/heads/main/pelican/panel/setup_database.sh | sudo bash
+cd ~
+sudo curl -sSL https://raw.githubusercontent.com/GrumpyOli/linuxscript/refs/heads/main/pelican/panel/install_pelican_panel.sh -O
+sudo chmod +x install_pelican_panel.sh
+./install_pelican_panel.sh
 ```
