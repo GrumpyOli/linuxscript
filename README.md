@@ -1,30 +1,45 @@
-<h1>GrumpyOli's Script</h1>
+# GrumpyOli's Script
 
-<h2>Basic script for application installation</h2>
-<p>Linux basic script, first we need to install Curl to make sure everything works fine</p>
+A collection of useful commands to make your life easier!
 
-```Bash
-sudo apt install curl
+---
+
+## 🔧 Prerequisites
+
+### Install Curl
+To use some commands, you might need `curl`. Install it with:
+
+```bash
+sudo apt install -y curl
 ```
-<p>Enabling SSH Server</p>
+
+## 📡 Enabling SSH Server
+Follow these steps to enable the SSH server:
+
+Update the package list.
+Install the OpenSSH server.
+Allow SSH through the firewall.
+Run the following commands:
 
 ```Bash
-sudo apt update -q
-sudo apt install -y -q openssh-server
+sudo apt update
+sudo apt install -y openssh-server
 sudo ufw allow ssh
 ```
-<h2>MariaDB</h2>
-<p>Install script</p>
+
+## MariaDB
+### Installation
 
 ```Bash
-curl -sSL https://raw.githubusercontent.com/GrumpyOli/linuxscript/refs/heads/main/mariadb.sh | sudo bash
+sudo curl -LsS https://r.mariadb.com/downloads/mariadb_repo_setup | sudo bash -s
+sudo apt install mariadb-server -y
 ```
 
-<p>Uninstall script</p>
+`sudo mysql_secure_installation`
 
-```Bash
-curl -sSL https://raw.githubusercontent.com/GrumpyOli/linuxscript/refs/heads/main/mariadb_remove.sh | sudo bash
-```
+### Uninstall
+
+`curl -sSL https://raw.githubusercontent.com/GrumpyOli/linuxscript/refs/heads/main/mariadb_remove.sh | sudo bash`
 
 <h2>Pelican Panel & Wings helper</h2>
 
