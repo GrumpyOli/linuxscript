@@ -12,6 +12,7 @@ To use some commands, you might need `curl`. Install it with:
 ```bash
 sudo apt install -y curl
 ```
+
 ## Fresh server script
 It will instal mDNS and QEMU agent
 
@@ -28,8 +29,12 @@ sudo apt install -y openssh-server
 sudo ufw allow ssh
 ```
 
+---
+
 ## 🗄️ MariaDB
+
 ### Installation
+
 Follow these steps to install MariaDB:
 
 ```Bash
@@ -44,9 +49,11 @@ sudo mysql_secure_installation
 curl -sSL https://raw.githubusercontent.com/GrumpyOli/linuxscript/refs/heads/main/mariadb_remove.sh | sudo bash
 ```
 
-<h2>Pelican Panel & Wings helper</h2>
+---
 
-<p>Panel</p>
+## Pelican Panel & Wings helper
+
+### Panel installation script
 
 ```Bash
 cd ~
